@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Environment files
+.env*
+
+# Logs
+*.log
+
+# Coverage directory
+coverage/
+
+# Cache directories
+.cache/
+.parcel-cache/
+.vite/
+
+# Package files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Generated files
+*.min.js
+*.min.css
+
+# Documentation
+README.md
+CHANGELOG.md
+LICENSE
+
+# Config files that should maintain their format
+.eslintrc.js
+.prettierrc
+tailwind.config.js
+vite.config.ts 
