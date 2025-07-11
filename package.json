@@ -12,9 +12,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/swiper": "^5.4.3",
     "concurrently": "^9.2.0"
   },
   "dependencies": {
-    "@iconify/react": "^6.0.0"
+    "@iconify/react": "^6.0.0",
+    "swiper": "^11.2.10"
   }
 }
