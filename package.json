@@ -1,38 +1,35 @@
 {
-<<<<<<< HEAD
   "name": "runacoss-website",
   "version": "1.0.0",
-  "description": "Runacoss website with blog functionality",
+  "description": "Full-stack website for Runacoss with backend and frontend",
+  "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
-    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run build && npm run preview",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
   },
+  "keywords": [
+    "runacoss",
+    "website",
+    "fullstack",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Ola Israel",
+  "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.2.2"
-  }
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
 } 
-=======
-  "name": "project",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
-    "client": "npm --prefix client start",
-    "server": "npm --prefix server start"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/swiper": "^5.4.3",
-    "concurrently": "^9.2.0"
-  },
-  "dependencies": {
-    "@iconify/react": "^6.0.0",
-    "swiper": "^11.2.10"
-  }
-}
->>>>>>> runacoss/main

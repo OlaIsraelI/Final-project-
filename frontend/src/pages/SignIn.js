@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useLoginUserMutation } from "../../lib/APIs/authAPIs";
+import { useLoginUserMutation } from "../lib/APIs/authAPIs";
 import ErrorOutput from "../components/common/ErrorOutput";
 import { useEffect, useState } from "react";
 
